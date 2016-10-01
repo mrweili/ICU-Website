@@ -1,55 +1,82 @@
 <html>
+
 <head>
-	<meta charset="utf-8"> 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+    <script src="execs.js"></script>
+    <link rel="stylesheet" type="text/css" href="general.css">
+    <link rel="stylesheet" type="text/css" href="executives-list.css">
+    <!--<script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.js"></script>
+		<script type="text/javascript" src="./tilesUI.js"</script> -->
+</head>
 
-		</head>
-		<body>
-			<!--    SECTION 1 NAVBAR-->
-			<div  class="container">
-				<img class="logo "src="./img/title.png">
-				<nav class="navbar navbar-default bg-white">
-					<div class="nav navbar-nav">
-						<a class="nav-item nav-link " href="#">HOME</a>
-						<a class="nav-item nav-link active" href="#">EVENT</a>
-						<a class="nav-item nav-link" href="#">SPONSORS</a>
-						<a class="nav-item nav-link" href="#">ABOUT</a>
-						<a class="nav-item nav-link" href="#">EXECUTIVE</a>
-						<a class="nav-item nav-link pull-xs-right" href="#">CONTACT</a>
-					</div>
-				</nav>
-				<br>
-				<br>
-				<br>
-				<div class="container">
-					<div class="card-deck-wrapper">
-						<div class="card-deck">
-							<div class="card card-border" >
-								<h4 class="card-title">校園爭霸戰</h4>
-								<img class="card-img-top card-md " src="./img/event-studentwar-card.jpg" alt="Card image cap">
-								<div class="card-block">
-									<p class="card-text">硝煙四起的校園，為了自己的班集體榮譽而戰！究竟誰能帶領同學們獲得最終的勝利，登上會長的寶座呢?! </p>
+<body>
+    <!--  NAVBAR  -->
+    <div class="container"> 
+    <a href="./index.html"><img class="logo "src="./img/title.png"></a>
+    </div>
+        <nav class="navbar navbar-default bg-white">
+            <div class="nav navbar-nav"> 
+                <a class="nav-item nav-link active" href="./index.html">HOME</a> 
+                <a class="nav-item nav-link eventDropdown" href="./events.html">EVENT 
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <div class="eventDropdownContent"><ul>
+                        <li>EVENT</li>
+                        <li>EVENT</li>
+                        <li>EVENT</li>
+                        <li>EVENT</li>
+                        <li>EVENT</li>
+                        <li>EVENT</li>
+                    </ul></div>
+                </a> 
+                <a class="nav-item nav-link" href="./sponsors.html">SPONSORS</a> 
+                <a class="nav-item nav-link" href="#">ABOUT</a> 
+                <a class="nav-item nav-link active" href="./executives.html">EXECUTIVE</a> 
+                <a class="nav-item nav-link pull-xs-right" href="#">CONTACT</a> 
+            </div>
+        </nav>
+    <!--    SECTION 1  -->
+    <div class="section1 container">
+        <div class="row">
+            <div class="col-sm-3 col1">
+                <h1>FIRT NAME LAST NAME</h1>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Viv</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.</p>
+            </div>
+            <div class="col-sm-9 col2">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="col-sm-10">
+                        <!--    SECTION 2 CAROUSAL-->
+                        <div id="carousel" class="carousel slide" data-ride="carousel">
+                            <!-- Items -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active"> <img src="http://lorempixel.com/1500/600/abstract/1" alt="Slide 1" /> </div>
+                                <div class="carousel-item"> <img src="http://lorempixel.com/1500/600/abstract/2" alt="Slide 2" /> </div>
+                                <div class="carousel-item"> <img src="http://lorempixel.com/1500/600/abstract/3" alt="Slide 3" /> </div>
+                                <div class="carousel-item"> <img src="http://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" alt="Slide 4" /> </div>
+                                <div class="carousel-item"> <img src="http://www.bestmotherofthegroomspeeches.com/wp-content/themes/thesis/rotator/sample-1.jpg" alt="Slide 5" /> </div>
+                                <div class="carousel-item"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI92GwxAstszSK8uQZ5PxTQdPDrJSBPWHIxSmBJ8ZjfrhZT5Yrbg" alt="Slide 6" /> </div>
+                            </div>
+                            <a href="#carousel" class="left carousel-control" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+                            <a href="#carousel" class="right carousel-control" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <ul class="hide-bullets carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0"><img class="img-thumbnail" src="http://lorempixel.com/1500/600/abstract/1" alt="Thumbnail image"></li>
+                            <li data-target="#carousel" data-slide-to="1"><img class="img-thumbnail" src="http://lorempixel.com/1500/600/abstract/2" alt="Thumbnail image"></li>
+                            <li data-target="#carousel" data-slide-to="2"><img class="img-thumbnail" src="http://lorempixel.com/1500/600/abstract/3" alt="Thumbnail image"></li>
+                            <li data-target="#carousel" data-slide-to="3"><img class="img-thumbnail" src="http://nikonrumors.com/wp-content/uploads/2014/03/Nikon-1-V3-sample-photo.jpg" alt="Thumbnail image"></li>
+                            <li data-target="#carousel" data-slide-to="4"><img class="img-thumbnail" src="http://www.bestmotherofthegroomspeeches.com/wp-content/themes/thesis/rotator/sample-1.jpg" alt="Thumbnail image"></li>
+                        </ul>
+                    </div>
+                    <!--/Slider-->
+                </div>
+            </div>
+        </div>
+</body>
 
-								</div>
-							</div>
-							<div class="card card-border">
-								<h4 class="card-title">粵語教學－白色情人節</h4>
-								<img class="card-img-top card-md" src="./img/event-whitevalentine.jpg" alt="Card image cap">
-								<div class="card-block">
-									<p class="card-text">不記得怎麼用廣東話追心儀的男神女神？好學的你還想學多點廣東話？ICU最懂你！萬眾期待 你們朝思暮想的canto class又回來了！</p>
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<br><br><br>
-				</div>
-
-
-
-			</body>
-
-			</html>
+</html>

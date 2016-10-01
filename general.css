@@ -1,0 +1,53 @@
+/*NAVBAR*/
+
+.logo {
+    height: 80px;
+    width: 210px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+nav {
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 0px 5px 5px -5px grey;
+}
+
+nav a {
+    color: #121212;
+    padding-right: 30px;
+}
+
+.navbar-nav .active {
+    color: #ED2865;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ED2865;
+}
+
+.eventDropdownContent {
+    display: none;
+    position: absolute;
+    left: 90px;
+}
+
+.eventDropdownContent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.eventDropdownContent li {
+    background-color: #F1F1F1;
+    margin: 5px;
+    padding: 10px 20px;
+    color: black;
+}
+
+.eventDropdownContent li:hover {
+    color: inherit;
+}
+
+.eventDropdown:hover .eventDropdownContent {
+    display: block;
+}

@@ -1,0 +1,112 @@
+/*SECTION 1*/
+
+.section1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section1 h2 {
+    margin-bottom: 20px;
+}
+
+
+/*TILES ROW 1*/
+
+.tiles {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.tilesRow1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tilesRow1 > .col1 {
+    flex: 0 0 400px;
+    height: 400px;
+    background: red;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 5px;
+}
+
+.tilesRow1 > .col2 {
+    flex: 0 0 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.tilesRow1 > .col2 > .row1 {
+    background: blue;
+    flex: auto;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-bottom: 5px;
+}
+
+.tilesRow1 > .col2 > .row2 {
+    display: flex;
+    flex: auto;
+    margin-top: 5px;
+}
+
+.tilesRow1 > .col2 > .row2 > .col1 {
+    background: grey;
+    flex: auto;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 5px;
+}
+
+.tilesRow1 > .col2 > .row2 > .col2 {
+    background: purple;
+    flex: auto;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-left: 5px;
+}
+
+
+/*TILES ROW 2*/
+
+.tilesRow2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tilesRow2 > .col1 {
+    flex: 0 0 650px;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 10px;
+    height: 400px;
+    margin: 5px;
+}
+
+.tilesRow2 > .col2 {
+    flex: 0 0 150px;
+    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin-right: 10px;
+    height: 400px;
+    margin: 5px;
+}
+
+

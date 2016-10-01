@@ -1,0 +1,25 @@
+.section1 {
+    margin-top: 40px
+}
+
+.section1 .col1 {
+    border-right: 1px solid black;
+}
+
+.section1 h1 {
+    font-size: 20px;
+}
+
+.section1 p {
+    font-size: 11px;
+}
+
+.section1 .carousel-indicators {
+    top: 0;
+}
+
+.section1 .carousel-indicators li {
+    width: initial;
+    height: inherit;
+    text-indent: initial;
+}
