@@ -9,6 +9,13 @@
     margin-bottom: 20px;
 }
 
+.featured{
+    
+    max-width: 100%;
+    border-radius: 20px;
+    margin-top: 25px;
+
+}
 
 /*TILES ROW 1*/
 
@@ -27,7 +34,7 @@
     flex: 0 0 400px;
     height: 400px;
     background: red;
-    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-image: url("./paintnight/photo2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -89,7 +96,7 @@
 
 .tilesRow2 > .col1 {
     flex: 0 0 650px;
-    background-image: url("http://i.stack.imgur.com/2OrtT.jpg");
+    background-image: url("./paintnight/photo1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
