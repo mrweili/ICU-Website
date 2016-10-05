@@ -258,10 +258,13 @@ a:focus,
 }
 
 
-a.list-group-item:focus  {
-    color:#EA1159;
+.list-group-item{
+    color: black;
 }
 
-.list-group-item:hover{
-    color : red;
+.list-group-item:focus,.list-group-item:hover{
+    color: #EC1059;
 }
+
+
+
